@@ -43,18 +43,15 @@ footer-text: SD MAID FREE RULES FOR CHINESE APPS
 disqus: # fromendworld
 
 # Gitalk
-var gitalk  = new Gitalk({
-         // 在这里设置一下截取前50个字符串, 这是因为 github 对 label 的长度有了要求, 如果超过
-         // 50个字符串则会报错.
-        id: (location.pathname).split("/").pop().substring(0, 49),
-        distractionFreeMode: true,
-        language: language
- });
 gitalk:
+  enable: true
+  githubID: coolapijust
   clientID: 6db3a645da78f57ae9cc
   clientSecret: c82f51c39743226285a6cff04dd7207936dc512e
   repo: coolapijust.github.io
   owner: coolapijust
+  adminUser: coolapijust
+  distractionFreeMode: true
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
 #google_analytics: 
