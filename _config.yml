@@ -46,12 +46,15 @@ disqus: # fromendworld
 gitalk:
   enable: true
   githubID: coolapijust
+  var title = location.pathname.substr(0, 50);
+var gitalk = new Gitalk({
   clientID: 6db3a645da78f57ae9cc
   clientSecret: c82f51c39743226285a6cff04dd7207936dc512e
   repo: coolapijust.github.io
   owner: coolapijust
   adminUser: coolapijust
   distractionFreeMode: true
+})
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
 #google_analytics: 
